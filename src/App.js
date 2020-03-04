@@ -1,9 +1,12 @@
 import React from 'react';
+import PostForm from './PostForm';
+import AllPost from './AllPost';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Smarkio!</h1>
+      <PostForm />
+      <AllPost />
     </div>
   );
 }
