@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+//Para obtermos o dispatch e o acessarmos usamos o connect para manter o componente ligado ao seu estado
+import { connect } from 'react-redux';
+
 class PostForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
@@ -11,6 +14,13 @@ class PostForm extends Component {
             message
         }
         console.log(data)
+        //Acessando a action dentro do state usando os benefícios do connect
+        this.props.dispatch({
+            type: 'ADD_POST',
+            data
+        });
+        this.getTitle.value = '';
+        this.getMessage.value = '';
     }
     render() {
         return (
@@ -39,4 +49,4 @@ class PostForm extends Component {
     }
 }
 
-export default PostForm;
+export default connect()(PostForm);
