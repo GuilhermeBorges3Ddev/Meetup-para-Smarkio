@@ -13,12 +13,16 @@ class PostForm extends Component {
             title,
             message
         }
-        console.log(data)
+
+        //Use para inspecionar o estado atual no console ---> console.log(data)
+        
         //Acessando a action dentro do state usando os benefícios do connect
-        this.props.dispatch({
-            type: 'ADD_POST',
-            data
-        });
+        this.props.dispatch(
+            {
+                type: 'ADD_POST',
+                data
+            }
+        );
         this.getTitle.value = '';
         this.getMessage.value = '';
     }
