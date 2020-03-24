@@ -1,6 +1,6 @@
 //Nessa arrow temos a constante que espera um array de actions para disparar os estados
 const postReducer = (state = [], action) => {
-    switch(action) {
+    switch(action.type) {
         case 'ADD_POST':
             return state.concat([action.data]);
         case 'DELETE_POST':
