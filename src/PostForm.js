@@ -11,7 +11,8 @@ class PostForm extends Component {
         const data = {
             id: new Date(),
             title,
-            message
+            message,
+            editing: false
         }
 
         //Use para inspecionar o estado atual no console ---> console.log(data)
