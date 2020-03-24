@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Post from './Post';
 import { createStore } from 'redux';
 
 //Esse cara é quem passo o reducer para dentro de nosso "store-container" que está vazio
