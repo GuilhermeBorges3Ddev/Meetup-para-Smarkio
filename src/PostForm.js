@@ -30,7 +30,7 @@ class PostForm extends Component {
     render() {
         return (
             <div className="post-container">
-                <h1 className="post_heading">Poste a sua sugestão para a Smarkio:</h1>
+                <h5 className="post_heading">Poste a sua sugestão para a Smarkio:</h5>
                 <form className="form" onSubmit={this.handleSubmit}>
                     <input 
                         required 
