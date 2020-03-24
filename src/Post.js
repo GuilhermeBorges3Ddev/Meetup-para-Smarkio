@@ -4,25 +4,30 @@ import {connect} from 'react-redux';
 class Post extends Component {
   render() {
   return (
-    <div>
+    <div className="post">
       
-      <h2>{this.props.post.title}</h2>
-      <p>{this.props.post.message}</p>
+      <h2 className="post_title">{this.props.post.title}</h2>
+      <p className="post_message">{this.props.post.message}</p>
       
-      <button onClick={() => this.props.dispatch({
-            type: 'EDIT_POST',
-            id: this.props.post.id
-      })}>
-        Editar postagem
-      </button>
-      
-      <button
-        onClick={() => this.props.dispatch({
-            type: 'DELETE_POST',
-            id: this.props.post.id
-      })}>
-        Deletar postagem
-      </button>
+      <div className="control-buttons">
+        <button 
+              className="edit"
+              onClick={() => this.props.dispatch({
+                type: 'EDIT_POST',
+                id: this.props.post.id
+              })}>
+          Editar postagem
+        </button>
+        
+        <button
+              className="delete"
+              onClick={() => this.props.dispatch({
+                type: 'DELETE_POST',
+                id: this.props.post.id
+              })}>
+          Deletar postagem
+        </button>
+      </div>
     
     </div>
   );
