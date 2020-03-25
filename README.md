@@ -44,7 +44,6 @@ Abra uma nova aba do seu terminal acessando o mesmo caminho `Meetup-para-Smarkio
 ##### Para o caso do frontend não rodar por algum motivo, verifique se o computador possui o pacote `create-react-app` instalado; caso não haja a instalação basta rodar um dos dois comandos abaixo: 
     npm install -g create-react-app
     yarn global add create-react-app
----
  
 ***
 
