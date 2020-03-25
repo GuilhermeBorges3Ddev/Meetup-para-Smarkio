@@ -2,8 +2,6 @@
 ---
 ### Tema: Redux & Flux Implementations 
 ---
-
----
 ### **Instruções para executar o projeto:** 
 ---
 #### **1) Crie um diretório para clonar o projeto:**
@@ -47,14 +45,6 @@ Abra uma nova aba do seu terminal acessando o mesmo caminho `Meetup-para-Smarkio
     npm install -g create-react-app
     yarn global add create-react-app
 ---
-
-### Caso deseje acessar os slides feitos entender este código ou mesmo um conteúdo gravado em vídeo, basta acessar:
-
-| Links           | Conteúdo|
-| ------------- |:-------------:|
-| http://localhost/                 | SLIDE           |
-
-
  
 ***
 
