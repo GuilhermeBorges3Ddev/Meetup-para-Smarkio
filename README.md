@@ -1,5 +1,5 @@
 # Meetup-para-Smarkio
----
+
 ### Tema: Redux & Flux Implementations 
 ---
 ### **Instruções para executar o projeto:** 
