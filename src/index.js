@@ -11,7 +11,10 @@ import { Provider } from 'react-redux';
 import postReducer from './reducers/postReducer';
 
 //Aqui nós criamos a variável que recebe nosso container de estado inicialmente vazio
-const store = createStore(postReducer);
+const store = createStore(
+    postReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 //A aplicação fica "envelopada" pelo container de estados
 ReactDOM.render(
